@@ -1,0 +1,37 @@
+package com.company;
+
+import java.util.ArrayList;
+
+        public class customer {
+            private String cusname;
+            private ArrayList<purchase> cuspurch = new ArrayList<purchase>();
+
+            public customer(String name, ArrayList<purchase> cuspurch) {
+                this.cuspurch = cuspurch;
+                this.cusname = cusname;
+            }
+
+            public customer() {
+            }
+
+            public String getName() {
+                return cusname;
+            }
+
+            public void setName(String name) {
+                this.cusname = cusname;
+            }
+
+            public ArrayList<purchase> getCuspurch() {
+                return cuspurch;
+            }
+
+            public void setCuspurch(ArrayList<purchase> cusorder) {
+                this.cuspurch = cuspurch;
+            }
+
+            public void addProduct(purchase purchase) {
+                cuspurch.add(purchase);
+            }
+        }
+
