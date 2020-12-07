@@ -1,0 +1,35 @@
+package com.company;
+
+public class purchase {
+        private String namepurch;
+        private double pricepurch;
+
+        public purchase(String namepurch, double pricepurch) {
+            this.namepurch = namepurch;
+            this.pricepurch = pricepurch;
+        }
+
+        public purchase() {
+        }
+
+        public String getNamepurch() {
+            return namepurch;
+        }
+
+        public void setNamepurch(String namepurch) {
+            this.namepurch = namepurch;
+        }
+
+        public double getPricepurch() {
+            return pricepurch;
+        }
+
+        public void setPricepurch(double pricepurch) {
+            this.pricepurch = pricepurch;
+        }
+
+        public  String toString(){
+            return namepurch + " - " + pricepurch;
+        }
+    }
+
